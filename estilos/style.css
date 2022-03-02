@@ -8,7 +8,7 @@ selector{
 
 
 body{
-  background-color: rgb(14, 38, 52) ;
+  
   text-align: center;
 }
 
@@ -18,13 +18,39 @@ body{
 
 }
 
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to right top,
+    #143852,
+    #0c2232,
+    #2c2594
+  );
+  padding: 10px;
+}
+
+
+.title{
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: #0c2232;
+  background-color: #143852;
+  display: flex;
+}
+
+
+
 /* cada color es un grid */
 
 
 /* navegacion */
 .sectionUno{
   
-  background-color:  #ec9f10;
+  background-color:  #050505;
   display: grid;
   grid-template-columns: repeat(5,0.5fr);
   list-style-type: none;
@@ -47,15 +73,15 @@ body{
 /* Cuerpo */
 
 
-
-
 /* titulo */
+
 h1 {
-  display: inline-block;
-  text-align: center;
-  position: relative;
+  margin: auto;
+  display: flex;
   color: #ec9f10;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 75px;
+  background-color: #0c2232;
 }
 
 h1::after,h1::before{
@@ -83,11 +109,6 @@ img {
   margin: auto;
 }
 
-header {
-  background-color: rgb(14, 38, 52);
-  padding: 40px;
-  margin-top: 0;
-}
 
 .a {
   font-family: Arial, Helvetica, sans-serif;
@@ -108,9 +129,9 @@ p {
 
 
 
-/* Boton */
+/* Boton le falta la B */
 
-button {
+utton {
     align-items: center;
     margin: 1px;
     color: #090909;
@@ -125,7 +146,7 @@ button {
 button:hover {
   border: 1px solid white;
 }
-button:active {
+utton:active {
   box-shadow: 4px 4px 12px #c5c5c5,
     -4px -4px 12px #ffffff;
     grid-area:ad;
@@ -243,27 +264,8 @@ textarea{
 
 
 
+.indexBody {
 
-/* mapa */
-
+  background-color: #0c2232;
+}
 /* media queries */
-
-@media(min-width:575px){
-  body{
-    background-color: hsl(14, 38, 52);
-  }
-
-}
-
-@media(min-width:920px){
-  body{
-    background-color: rgb(14, 38, 52)
-  }
-
-}
-
-@media(max-width:1200px){
-  body{
-    background-color: rgb(14, 38, 52);
-  }
-}
